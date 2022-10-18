@@ -44,7 +44,9 @@
     align-items: center;  /* Add this */
   }
 
-.social, .logo, .subscribe {
+.social,
+.logo,
+.subscribe {
   /*border: 1px solid #5995DA;*/
 }
 
@@ -59,6 +61,16 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.first-item {
+  order: 1;
+}
+
+.last-item {
+  order: -1;
 }
 
 .photo-grid-item {
@@ -66,4 +78,25 @@
   width: 300px;
   height: 300px;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 200px;
+  flex: 1;
+}
+
+.footer-one,
+.footer-three {
+  flex: initial;
+  width: 300px;
+}
   
+.signup {
+  margin-left: auto;
+}
